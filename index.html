@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusPilot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- 1.left sidebar - navigation rail -->
+        <aside id="sidebar" class="sidebar">
+
+            <div class="sidebar_logo">
+                <h2>FocusPilot</h2>
+            </div>
+
+            <div class="sidebar_section">
+
+                <div class="workspace">
+                    <h1>WORKSPACE</h1>
+                    <div class="workspace_options">
+
+                        <div class="elems">
+                            <h3 class="sidebar_options dashboard" id="0"><i class="fa-solid fa-house"></i> Dashboard
+                            </h3>
+                        </div>
+
+                        <div class="elems">
+                            <h3 class="sidebar_options" id="1"><i class="fa-solid fa-list"></i> To Do List</h3>
+                        </div>
+
+                        <div class="elems">
+                            <h3 class="sidebar_options" id="2"><i class="fa-solid fa-stopwatch"></i> Pomodoro Timer</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="personal">
+
+                    <h1>PERSONAL</h1>
+                    <div class="personal_options">
+
+                        <div class="elems">
+                            <h3 class="sidebar_options" id="3"><i class="fa-solid fa-bullseye"></i> Goals</h3>
+                        </div>
+
+                        <div class="elems">
+                            <h3 class="sidebar_options" id="4"><i class="fa-solid fa-clipboard-list"></i> Notes</h3>
+                        </div>
+
+                        <div class="elems">
+                            <h3 class="sidebar_options" id="5"><i class="fa-regular fa-lightbulb"></i> Motivation</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="settings">
+
+                    <div class="elems">
+                        <h3 class="sidebar_options" id="6"><i class="fa-solid fa-gears"></i> Settings</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- 2.top navigation bar -->
+        <header id="topbar" class="topbar">
+
+            <div class="topbar_left">
+
+                <div class="topbar_left1">
+                    <h2 class="userName"><i class="fa-solid fa-user"></i> Hello, <span>Rakib</span></h2>
+                    <h4>Let's crush it today. 💪</h4>
+                </div>
+
+                <div class="divider"></div>
+                <div class="quote_symbol" style="color: #27374D;"><i class="fa-solid fa-quote-right"></i></div>
+
+
+
+                <div class="topbar_left2">
+                    <p>"Focus on being productive, not busy."</p>
+                    <p>— Tim Ferriss</p>
+                </div>
+
+            </div>
+            <div class="topbar_right">
+                <i class="fa-solid fa-plus"></i> New task
+            </div>
+
+        </header>
+
+        <!-- 3.main content area -->
+        <main id="content" class="content">
+            <!-- Dashboard Content (by default) -->
+            <div class="content_top">
+                <div class="time_date">
+                    <h1 id="live-time">16:18:22 PM</h1>
+                    <h2 id="live-date">Sunday, May 24, 2026</h2>
+                </div>
+
+                <div class="status">
+
+                    <div class="tasks_today status_box">
+                        <p>Tasks today</p>
+                        <h3 class="bold_text">0</h3>
+                        <p style="color: rgb(94, 215, 94);" class="completedTask">5 completed</p>
+                    </div>
+
+                    <div class="completion_perc status_box">
+                        <p>Completion</p>
+                        <h3 class="bold_text">0%</h3>
+                        <p style="color: rgb(94, 215, 94); " id="undoneTaskPerc">0% left</p>
+                    </div>
+
+                    <div class="needs_attention status_box">
+                        <p>Overdue</p>
+                        <h3 style="color: rgb(237, 8, 8);" class="bold_text">0</h3>
+                        <p style="color: rgb(237, 8, 8);">Needs attention</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="fullContent"> 
+            </div> 
+
+
+               <!-- To Do List Content   -->
+            <div class="fullContent">
+
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <h1>To Do List</h1>
+                    </div>
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div>
+
+                <!-- form -->
+                <div class="remainingFullContent">
+
+                    <form>
+                        <div class="taskBar">
+                            <div class="writeTask">
+                                <input type="text" class="enterTask" placeholder="What needs to be done?">
+                            </div>
+                            <div class="addTaskBtn">
+                                <button class="addTask" type="submit">Add Task</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="allTask"> 
+                         <!-- <div class="task">
+                            <h5>Go to the gym</h5>
+                            <button class="completeTask">Mark as completed</button>
+                        </div>
+                        <div class="task">
+                            <h5>Practice dsa questions</h5>
+                            <button class="completeTask">Mark as completed</button>
+                        </div>
+                        <div class="task">
+                            <h5>Watch pending lectures of web dev</h5>
+                            <button class="completeTask">Mark as completed</button>
+                        </div>  -->
+
+
+                    </div>
+
+
+
+                </div> 
+                
+
+            </div>
+
+            <!-- Pomodoro Timer Content -->
+            <div class="fullContent">
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-hourglass-start"></i>
+                        </div>
+                        <h1>Pomodoro Timer</h1>
+                    </div>
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div>
+
+                <div class="pomodoroTimer">
+
+                    <div class="pomodoroTopOptions">
+                        <div class="pomodoro">
+                            <h3>Pomodoro</h3>
+                        </div>
+                        <div class="shortBreak">
+                            <h3>Short Break</h3>
+                        </div>
+                        <div class="longBreak">
+                            <h3>Long Break</h3>
+                        </div>
+                    </div>
+
+                    <div class="timer">
+                        <div class="pomodoroTimer_box">
+                            <h1 class="pomodoroTime">25:00</h1>
+                        </div>
+                        <h2></h2>
+                        <div class="shortBreakTimer_box">
+                            <h1 class="shortBreakTime">04:59</h1>
+                        </div>
+                        <div class="longBreakTimer_box">
+                            <h1 class="longBreakTime">14:59</h1>
+                        </div>
+                    </div>
+
+                    <div class="pomodoroButtons">
+                        <button class="start">Start</button>
+                        <button class="stop">Stop</button>
+                        <button class="reset">Restart</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Goals Content -->
+            <div class="fullContent">
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </div>
+                        <h1>Goals</h1>
+                    </div>
+
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div>
+
+                <div class="goalsRemainingContent">
+
+                    <div class="goalHeading">
+                        <h1>Set your monthly goals.</h1>
+                    </div>
+
+                    <div class="setGoal">
+                        <form>
+                            <input type="text" placeholder="Create goals that keep you motivated" class="goalInput">
+                            <button type="submit" class="goalSetBtn">Add Goal</button>
+                        </form>
+                    </div>
+
+                    <div class="allGoals"> 
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                        <div class="goal"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Notes Content -->
+            <div class="fullContent">
+
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-note-sticky"></i>
+                        </div>
+                        <h1>Notes</h1>
+                    </div>
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div>
+
+                <div class="notesFullcontent">
+                    
+                    <div class="allNotes">
+                        <textarea class="note" spellcheck="false"
+                            placeholder="Write your thoughts, ideas, or reminders here..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- Motivation Quotes Content -->
+            <div class="fullContent motivation">
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h1>Motivation Quotes</h1>
+                    </div>
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div> 
+                
+
+
+                <!-- quote box -->
+                <div class="quotes">
+                    <div class="quote_box">
+                        <div class="quote_box_top">
+                            <i class="fa-solid fa-quote-right"></i>
+                            <h3>Quote of the day</h3>
+                        </div>
+                        <div class="quote_box_bottom">
+                            <h1>“Success is not final, failure is not fatal: it is the courage to continue that counts.”</h1>
+                            <h1></h1>
+                            <div class="quote_author">
+                                <h2>— Winston Churchill</h2>
+                                <h2></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="quote_change_button"><i class="ri-refresh-line"></i>
+                        New Quote</button>
+                </div> 
+                
+
+
+            </div>
+
+            <!-- Settings Content -->
+            <div class="fullContent">
+                <div class="fullContentTop">
+                    <div class="fullContentTop_left">
+                        <div class="fullContentTop_left_icon">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                        <h1>Settings</h1>
+                    </div>
+
+                    <button class="backBtn"><i class="fa-regular fa-circle-left"></i> Back</button>
+                </div>
+
+                <div class="settingsOptions">
+                    <div class="option">
+                        <h1 class="settingsOptionHeading"> <i class="fa-solid fa-circle-half-stroke"></i> Change Theme
+                        </h1>
+                        <button class="changeTheme settingBtns">Switch to Light Theme</button>
+                    </div>
+                    <div class="option nameChangeOption">
+                        <h1 class="settingsOptionHeading"><i class="fa-solid fa-file-signature"></i> Set Your Name</h1>
+                        <!-- User Name change form -->
+                        <form>
+                            <div class="nameChange">
+                                <input type="text" placeholder="Enter your name" class="changeNameInput">
+                                <button class="save_name settingBtns" type="submit">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="option duartion_option">
+                        <h1 class="settingsOptionHeading"><i class="fa-solid fa-user-clock"></i> Pomodoro Timer Duration
+                        </h1>
+
+
+                        
+                        <div class="timerSettings">
+
+                            <div class="settingRow">
+                                <label>Focus Duration</label>
+                                <select id="focusTime">
+                                    <option value="25">25 min</option>
+                                    <option value="30">30 min</option>
+                                    <option value="45">45 min</option>
+                                    <option value="60">60 min</option>
+                                </select>
+                            </div>
+
+                            <div class="settingRow">
+                                <label>Short Break</label>
+                                <select id="shortBreakTime">
+                                    <option value="5">5 min</option>
+                                    <option value="10">10 min</option>
+                                    <option value="15">15 min</option>
+                                </select>
+                            </div>
+
+                            <div class="settingRow">
+                                <label>Long Break</label>
+                                <select id="longBreakTime">
+                                    <option value="15">15 min</option>
+                                    <option value="20">20 min</option>
+                                    <option value="30">30 min</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="option">
+                        <h1 class="settingsOptionHeading"><i class="fa-solid fa-database"></i> Clear All Data</h1>
+                        <div class="cleardata">
+                            <button id="cleartasks" class="settingBtns">Clear Tasks</button>
+                            <button id="clearGoals" class="settingBtns">Clear Goals</button>
+                        </div>
+                    </div> 
+                    <!-- sound on/off -->
+                    <div class="option">
+                        <h1 class="settingsOptionHeading"><i class="ri-volume-up-fill"></i> Timer Sound</h1>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- 4.right panel -->
+        <aside id="panel" class="panel">
+
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
