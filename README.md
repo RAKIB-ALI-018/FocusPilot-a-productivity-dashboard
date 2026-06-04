@@ -1,6 +1,8 @@
 FocusPilot 🚀
 A productivity dashboard built with vanilla HTML, CSS, and JavaScript — designed to help you stay focused, track your tasks, and manage your time effectively.
 
+🔗 Try FocusPilot here: https://rakib-ali-018.github.io/FocusPilot-a-productivity-dashboard/
+
 🌟 About the Project
 I've been learning full-stack web development for the last 4 months. Things were going great until my end-semester exams forced me to take a break for almost a month. 
 When I came back, I felt completely lost — most of the concepts felt blurry and unfamiliar.
